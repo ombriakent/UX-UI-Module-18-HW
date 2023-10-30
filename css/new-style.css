@@ -1,0 +1,218 @@
+/*new-style.css*/
+body{
+    background-color:#3B6064;
+}
+
+nav{
+    float: right;
+    background-color: #3B6064;
+    margin: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 30px;
+}
+
+.case-study h2{
+    color: black;
+}
+  .hero-item{
+    display: flex;
+    background-color: #3B6064;
+    width: 100%;
+    height: 600px;
+    margin:0;
+    padding:0;
+  }
+
+  #bottom{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #name{
+    position:relative;
+    right: 160px;
+    top: -70px;
+    color: white;
+    font-family: 'Abril Fatface', serif;
+    font-size: 150px;
+    line-height: 90%;
+    text-align: center;
+    letter-spacing: 3px;
+
+  }
+  #subhead{
+    position: relative;
+    top: -140px;
+    right: 155px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+
+  }
+  /*Basic Elements*/
+  a{
+    text-decoration: underline;
+  }
+  h1{
+    font-family:'Comfortaa', sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+  }
+  h2 {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 40px;
+  }
+
+
+  p, ul, li{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 40px;
+    color: black;
+
+  }
+  
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  img[src="images/image-placeholder.png"]{
+    width: 800px;
+  }
+  img[src="images/peach-arrow.png"]{
+    position: absolute;
+    top: 0;
+    width:150px;
+
+  }
+  img[src="images/green-blob.png"]{
+    position: absolute;
+    top: 380px;
+    left: 0;
+    width: 600px;
+  }
+
+  img[src="images/woman-walking.png"]{
+    position: absolute;
+    right:110px;
+    top: 150px;
+    z-index: 1;
+  }
+  img[src="images/green-celery.png"]{
+    right:0;
+    position: absolute;
+    top: 100px;
+    width: 140px;
+  }
+
+/*Module 18 HW additions*/
+.mySkills{
+  background-color: #C3DDD0;
+  padding: 10px;
+  margin: 0px;
+}
+
+.myWork{
+  background-color: #FFFCF3;
+  padding: 10px;
+  margin: 30px 0px;
+}
+  h1{
+  padding:30px;
+
+}
+
+  .flexContainer{
+    display:flex;
+    margin: 30px;
+    padding: 1px;
+  }
+
+  #flex-item-1, #flex-item-2, #flex-item-3{
+    flex-direction: row;
+    width: 33%;
+    padding: 60px;
+
+  }
+
+
+  
+
+
+/*My Work Grid*/
+.case-study{
+  padding: 5px;
+  margin: 5px;
+  display: grid;
+  grid-template-rows:800px 800px 800px;
+  grid-template-areas: "cs1" "cs2" "cs3";
+}
+  .case-study-item-1, .case-study-item-2, .case-study-item-3{
+    padding: 40px;
+    margin: 50px 20px;
+    background-color: #FFFCF3;
+    border-width: 10px; 
+    border-color:#CFCDC4;
+    border-style: solid;
+    border-radius: 10px;
+    align-items: center;
+
+}
+.case-study-item-1{
+  grid-area: cs1;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+#cs2p{
+  grid-area: cs2p;
+}
+#cs2b{
+  grid-area: cs2b;
+
+}
+
+.case-study-item-2{
+  justify-content: center;
+  grid-area: cs2;
+  display:grid;
+  grid-template-rows: 600px ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "cs2p cs2b";
+}
+
+.case-study-item-3{
+  grid-area: cs3;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+  }
+} 
+@media screen and (max-width: 600px){
+  
+  .case-study-item-2{
+    grid-template-rows:300px 300px;
+    grid-template-areas: "cs2p" "cs2b";
+    background-color: brown;
+}
+
+}
+
+
+button{
+  font-size: 40px;
+  font-family: "comfortaa", "sans-serif";
+  margin: 40px;
+  padding: 10px;
+  background-color: #3B6064;
+  color:#FFFCF3;
+}
