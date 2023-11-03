@@ -1,6 +1,8 @@
 /*new-style.css*/
 body{
     background-color:#3B6064;
+    background-size: cover;
+    width:100%;
 }
 
 nav{
@@ -64,10 +66,13 @@ nav a{
     font-family:'Comfortaa', sans-serif;
     font-size: 60px;
     font-weight: 900;
+    border: 1px solid red;
   }
   h2 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 40px;
+    border: 1px solid blue;
+
   }
 
 
@@ -75,6 +80,8 @@ nav a{
     font-family: 'Comfortaa', sans-serif;
     font-size: 40px;
     color: black;
+    border: 1px solid green;
+
 
   }
   
@@ -84,8 +91,8 @@ nav a{
     height: auto;
   }
   img[src="images/image-placeholder.png"]{
-    width: 800px;
   }
+
   img[src="images/peach-arrow.png"]{
     position: absolute;
     top: 0;
@@ -118,13 +125,16 @@ nav a{
 .mySkills{
   background-color: #C3DDD0;
   padding: 10px;
-  margin: 0px;
+  margin: 50px;
+}
+.mySkills img{
+  width:800px;
 }
 
 .myWork{
   background-color: #FFFCF3;
   padding: 10px;
-  margin: 30px 0px;
+  margin: 30px 50px;
 }
   h1{
   padding:30px;
@@ -133,18 +143,19 @@ nav a{
 
   .flexContainer{
     display:flex;
-    flex-direction: row;
-    margin: 30px;
+    flex-direction:row;
+    margin: 20px;
     padding: 1px;
+    border: 1px red solid;
   }
 
   #flex-item-1, #flex-item-2, #flex-item-3{
-    display:flex;
-    flex-direction: column;
-    width: 33%;
-    padding: 60px;
+    
+    padding: 30px;
+    border: 1px solid black;
 
   }
+
 
 
   
@@ -176,15 +187,8 @@ nav a{
   
 }
 
-#cs2p{
-  grid-area: cs2p;
-  display: grid;
-}
-#cs2b{
-  grid-area: cs2b;
-  display: grid;
 
-}
+
 
 .case-study-item-2{
   grid-area: cs2;
@@ -199,38 +203,28 @@ nav a{
   grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width: 1000px) {
-  body {
-  }
-} 
-@media only screen and (max-width: 600px){
-  
-  .case-study-item-2{
-    grid-template-rows: 400px 400px;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-      "cs2p" 
-      "cs2b";
-    background-color: brown;
-}
+@media (max-width: 600px){
   .flexContainer{
-  display:flex;
-  flex-direction: column;
-  margin: 10px;
-  padding: 1px;
-}
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding: 1px;
+    
+  }
   #flex-item-1, #flex-item-2, #flex-item-3{
-  display:flex;
-  flex-direction: column;
-  width: 33%;
-  padding: 60px;
+    display:flex;
+    flex-wrap: wrap;
+    width:fit-content;
+    padding: 30px;
 
+  }
 }
 
 
 
 
-}
+
 
 
 button{
